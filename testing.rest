@@ -1,0 +1,13 @@
+POST http://localhost:5000/graphql/
+Content-Type: application/json
+X-Request-Type: GraphQL
+
+query {
+  executeGetPersonByPet(pet:"Cats")
+   {
+    person_id
+    person_name
+    person_email
+    pet_preference
+  }
+}
